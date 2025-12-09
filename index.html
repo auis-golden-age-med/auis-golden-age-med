@@ -925,7 +925,7 @@
                     "Ibn Rushd (Averroes) bridged Islamic and Western philosophy through his Aristotelian commentaries, while Al-Razi pioneered clinical medicine and experimental observation."
                 ],
                 citations: "Mahmood, R.K., Fatih, L.A., Majeed, K.J., Omar, B.H., Majeed, M.S., Ahmed, A.B. Maps, Illustrations, and Bibliography documenting medical history from ancient Mesopotamia through the Islamic Golden Age to modern Iraq.",
-                pdfFile: 'papers/maps/_Maps, illustrations, bibliographies-2.pdf',
+                pdfFile: 'papers/maps/maps-illustrations-bibliography.pdf',
                 authors: ['Rasan Khalid Mahmood', 'Las Abdalrahman Fatih', 'Karo Jabbar Majeed', 'Barzo Hawraz Omar', 'Mohammed Sarchl Majeed', 'Ahmed Baxtyar Ahmed'],
                 galleryImages: [
                   { src: 'papers/maps/img.png', caption: 'Royal Medical College Baghdad - Founded 1927' },
@@ -1459,6 +1459,9 @@
         const cardTitle = card.querySelector('h3').textContent;
         let pdfToLoad = null;
 
+        console.log('Image Alt:', imageAlt);
+        console.log('Card Title:', cardTitle);
+
         if (imageAlt === 'Ibn Sina Research') {
           pdfToLoad = researchData['Ibn Sina Research'].pdfFile;
         } else if (imageAlt === 'Historic Iraq Medical History') {
@@ -1488,8 +1491,12 @@
           pdfToLoad = researchData['House of Wisdom Research'].pdfFiles[0].file;
         }
 
+        console.log('PDF to load:', pdfToLoad);
+
         if (pdfToLoad) {
           loadPDF(pdfToLoad);
+        } else {
+          console.error('No PDF found for this card');
         }
       }, 100);
     };
