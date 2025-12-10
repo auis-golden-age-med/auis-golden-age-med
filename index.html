@@ -470,6 +470,135 @@
       .modal-hero-content > * {
         max-width: 100% !important;
       }
+
+      /* Fix all white backgrounds in modal */
+      #modal-body,
+      #modal-body *,
+      .modal *,
+      .modal-grid *,
+      .modal div,
+      .modal section,
+      .modal article {
+        background-color: transparent !important;
+      }
+
+      /* Re-apply backgrounds only to specific elements */
+      .modal {
+        background: linear-gradient(180deg, rgba(0, 8, 16, 0.98) 0%, rgba(0, 10, 24, 0.98) 100%) !important;
+      }
+
+      .modal-content {
+        background: linear-gradient(180deg, #000810 0%, #000a18 100%) !important;
+      }
+
+      .modal-sidebar {
+        background: rgba(255, 255, 255, 0.03) !important;
+      }
+
+      .modal-main-content {
+        background: rgba(255, 255, 255, 0.03) !important;
+      }
+
+      .modal-tags {
+        background: rgba(255, 255, 255, 0.03) !important;
+      }
+
+      .modal-meta-bar {
+        background: rgba(0, 8, 16, 0.7) !important;
+      }
+
+      .modal-tags span {
+        background-color: rgba(218, 165, 32, 0.1) !important;
+      }
+
+      /* Fix any white text to be gold or white */
+      .modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6 {
+        background: linear-gradient(135deg, #ffd700 0%, #fff 50%, #daa520 100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+      }
+
+      .modal p, .modal li, .modal span, .modal div {
+        color: rgba(255, 255, 255, 0.9) !important;
+      }
+
+      .modal a {
+        color: #ffd700 !important;
+      }
+
+      /* Fix any boxes or containers */
+      .modal .box,
+      .modal .container,
+      .modal .section,
+      .modal .content {
+        background: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(218, 165, 32, 0.3) !important;
+      }
+
+      /* Fix lists */
+      .modal ul, .modal ol {
+        color: rgba(255, 255, 255, 0.9) !important;
+      }
+
+      /* Fix tables if any */
+      .modal table {
+        background: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(218, 165, 32, 0.3) !important;
+      }
+
+      .modal th {
+        background: rgba(218, 165, 32, 0.2) !important;
+        color: #ffd700 !important;
+        border: 1px solid rgba(218, 165, 32, 0.4) !important;
+      }
+
+      .modal td {
+        background: rgba(0, 8, 16, 0.5) !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        border: 1px solid rgba(218, 165, 32, 0.2) !important;
+      }
+
+      /* Fix blockquotes */
+      .modal blockquote {
+        background: rgba(218, 165, 32, 0.1) !important;
+        border-left: 4px solid #daa520 !important;
+        padding: 1rem !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        margin: 1rem 0 !important;
+      }
+
+      /* Fix code blocks */
+      .modal code, .modal pre {
+        background: rgba(0, 8, 16, 0.8) !important;
+        color: #ffd700 !important;
+        border: 1px solid rgba(218, 165, 32, 0.3) !important;
+        padding: 0.2rem 0.4rem !important;
+        border-radius: 4px !important;
+      }
+
+      .modal pre {
+        padding: 1rem !important;
+        overflow-x: auto !important;
+      }
+
+      /* Fix buttons */
+      .modal button, .modal .button, .modal .btn {
+        background: linear-gradient(135deg, #daa520 0%, #b8860b 100%) !important;
+        color: #000810 !important;
+        border: 1px solid #ffd700 !important;
+        padding: 0.5rem 1rem !important;
+        border-radius: 8px !important;
+      }
+
+      /* Fix inputs */
+      .modal input, .modal textarea, .modal select {
+        background: rgba(0, 8, 16, 0.8) !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        border: 1px solid rgba(218, 165, 32, 0.4) !important;
+        padding: 0.5rem !important;
+        border-radius: 6px !important;
+      }
     }
   </style>
 </head>
